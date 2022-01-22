@@ -52,7 +52,7 @@ class ThoughtAudioSkill(OVOSCommonPlaybackSkill):
 
     def _book2ocp(self, book, score):
         author = " ".join([au.first_name + au.last_name for au in
-                            book.authors])
+                           book.authors])
         pl = [{
             "match_confidence": score,
             "media_type": MediaType.AUDIOBOOK,
